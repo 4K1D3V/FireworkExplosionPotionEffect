@@ -1,0 +1,18 @@
+name: FireworkExplosionPotionEffect
+version: '1.0-SNAPSHOT'
+main: pro.akii.pl.fireworkExplosionPotionEffect.FireworkExplosionPotionEffect
+api-version: '1.21'
+load: STARTUP
+authors: [ Akizuki ]
+description: This plugin allows players to create explosions with fireworks that apply a specific potion effect (such as speed, strength, or regeneration) to nearby players when the firework explodes. This can be triggered by commands or by using a custom item (like a firework rocket with special metadata).
+website: https://akii.pro
+commands:
+  fireworkeffect:
+    description: Launch a firework with a specified potion effect
+    usage: /fireworkeffect [effect]
+    permission: firework.effect
+    permission-message: "You do not have permission to use this command!"
+permissions:
+  firework.effect:
+    description: Allows players to use the fireworkeffect command
+    default: op

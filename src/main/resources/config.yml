@@ -1,0 +1,39 @@
+fireworkeffect:
+  # List of valid effects
+  effects:
+    - SPEED
+    - STRENGTH
+    - REGENERATION
+
+  # Radius around the explosion where players will be affected
+  radius: 10
+
+  # Duration of the potion effect in seconds
+  duration: 10
+
+  # Firework colors for each effect
+  fireworkColors:
+    SPEED: ["#00FF00", "#0000FF"]  # Green and Blue for SPEED
+    STRENGTH: ["#FF0000", "#FFFF00"]  # Red and Yellow for STRENGTH
+    REGENERATION: ["#00FF00", "#FFFFFF"]  # Green and White for REGENERATION
+
+messages:
+  # Message shown when a player successfully launches a firework
+  launchSuccess: "Firework launched! Potion effect applied to nearby players."
+
+  # Message shown when an invalid command argument is provided
+  invalidEffect: "Invalid effect type! Please use one of the following: SPEED, STRENGTH, REGENERATION."
+
+  # Message shown if a player does not have permission
+  noPermission: "You do not have permission to use this command!"
+
+fireworkColors:
+  SPEED:
+    - "#FF0000"
+    - "#00FF00"
+  STRENGTH:
+    - "#FFFF00"
+    - "#FF5733"
+  REGENERATION:
+    - "#00FFFF"
+    - "#FFFFFF"
